@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motornova | Presupuestos</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/171bc20bba.js" crossorigin="anonymous"></script>
+    <link rel="shortcuit icon" href="../img/MOTORNOVA1.jpg">
+</head>
+<body>
+    <header>
+        <div class="indexLogo"><img src="../img/Motornova.png"></div>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li>
+                    <a href="../secciones/productos.html">Productos</a>
+                    <ul class="subProductos">
+                        <li><a href="#"></a>Accesorios</li>
+                        <li><a href="#"></a>Motor</li>
+                        <li><a href="#"></a>Iluminacion</li>
+                        <li><a href="#"></a>Encendido y Electricidad</li>
+                        <li><a href="#"></a>Suspension y Freno</a></li>
+                        <li><a href="#"></a>Filtros y Aceite</a></li>
+                        <li><a href="#"></a>Inyeccion</a></li>
+                        <li><a href="#"></a>Refrigeracion</a></li>
+                        <li><a href="#"></a>Instrumental</a></li>
+                        <li><a href="#"></a>Ferreteria</a></li>
+                        <li><a href="#"></a>Equipamiento</a></li>
+                        <li><a href="#"></a>Neumaticos</a></li>
+                    </ul>
+                </li>
+                <li><a href="../secciones/presupuestos.html">Presupuestos</a></li>
+                <li><a href="../secciones/equivalencias.html">Equivalencias</a></li>
+                <li><a href="../secciones/quienessomos.html">Quienes Somos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Presupuestos</h1>
+    <section class="datosPresupuestos"> 
+        <h2 class="subDatos">Datos de contacto</h2>
+        <form>
+            <fieldset>
+                <div class="datosPersonales">
+                    <label for="nombre">Nombre y Apellido</label>
+                    <input type="text" id="nombre" placeholder="Ingrese su nombre y apellido" required>
+                <div>
+                <div class="datosPersonales"> 
+                    <label for="mail">Email</label>
+                    <input type="email" id="mail" placeholder="Ingrese su Email"required>
+                <div>
+                <div class="seleccionarMarca">
+                    <label>Indique la marca de su vehiculo:</label>
+                    <select name="marcaAuto">
+                        <option selected disabled>Seleccione una opcion</option>
+                        <option value="ford">Ford</option>
+                        <option value="chevrolet">Chevrolet</option>
+                        <option value="audi">Audi</option>
+                        <option value="mercerdezbenz">Mercedez Benz</option>
+                        <option value="volkswagen">Volkswagen</option>
+                    </select>    
+                </div>
+                <div class="seleccionarModelo">
+                    <label>Indique el modelo de su vehiculo:</label>
+                    <select name="modeloAuto">
+                        <option selected disabled>Seleccione una opcion</option>
+                        <option value="ka">Ka</option>
+                        <option value="Focus">Focus</option>
+                        <option value="corsa">Corsa</option>
+                        <option value="a3">A3</option>
+                        <option value="c250">C250</option>
+                        <option value="up">Up!</option>
+                        <option value="fox">Fox</option>
+                    </select>
+                </div>
+                <div class="seleccionarFiltros">
+                    <label>Selecciona el filtro que desea cambiar:</label>
+                    <input type="checkbox" name="filtros" id="filtros" value="1"> Filtro de Aire 
+                    <input type="checkbox" name="filtros" id="filtros" value="2"> Filtro de Aceite
+                    <input type="checkbox" name="filtros" id="filtros" value="3"> Filtro de Combustible
+                    <input type="checkbox" name="filtros" id="filtros" value="4"> Filtro de Habitaculo 
+                </div>
+                <div>
+                    <label>Fotos del filtro que busca o necesita (Opcional):</label>
+                    <input type="file"> 
+                </div>
+                <div class="comentario">
+                    <label for="mutli">Comentario:</label>
+                    <textarea name="multi" id="multi" cols="30" rows="5"></textarea>
+                <div>
+                <div class="botones">
+                    <input type="reset" value="Vaciar Formulario"/>
+                    <input type="submit" value="Enviar Informacion"/>
+                </div>   
+            <fieldset>
+        </form>
+    </section>
+    <footer>
+        <div class="contieneFooter">
+            <div class="boxFooter">
+                <div class="logo">
+                    <img src="../img/Motornova.png" alt="">
+                </div>
+                <div class="informacion">
+                    <p>Mail: trois_repuestos@hotmail.com</p>
+                    <p>Tel: 4552-3070 / 4554-1607 </p>
+                    <p>Horario de Atencion: Lunes a Viernes: 8:30 a 12:30hrs y 14:00 a 18:00hrs | Sabados: 9:00 a 13:30hrs</p>
+                    <p>Dirección: Av.Chorroarin 1099, Caba</p>
+                </div>
+            </div>
+            <div class="boxFooter">
+                <h2>Atencion al Cliente</h2>
+                <a href="#">Preguntas Frecuentes</a>
+                <a href="#">Puntos de Entrega</a>
+                <a href="#">Medios de Pago</a>
+                <a href="#">Devoluciones</a>
+                <a href="#">Envios</a>
+                <a href="#">Metodos de Pago</a>
+            </div>
+            <div class="boxFooter">
+                <h2>Sucursal</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.796116949183!2d-58.47154438477087!3d-34.58402508046448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb60ca2988331%3A0x7de129d7d9a5871e!2sAv.%20Chorroar%C3%ADn%201099%2C%20C1427%20CABA!5e0!3m2!1ses-419!2sar!4v1647042015005!5m2!1ses-419!2sar"  allowfullscreen="" loading="lazy"></iframe>
+            </div> 
+        </div>
+        <div class="boxCopyright">
+            <hr>
+            <p>Todos los derechos reservados © 2021 <b>Motornova</b></p>
+        </div>
+    </footer>
+
+</body>
+</html>

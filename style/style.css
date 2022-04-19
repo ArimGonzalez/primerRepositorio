@@ -74,18 +74,22 @@ footer {
     color: rgb(0, 0, 0);
     font-weight: 700;
     text-align: center;
-    font-family: 'Bebas Neue', cursive;
+    font-size: 23px;
+    font-family: 'Graduate', cursive;
 }
 .boxFooter a{
     margin-top: 20px;
     color: rgb(202, 4, 4);
-    font-size: 20px;
+    font-size: 16px;
     text-decoration: none;
 }
 .boxFooter iframe{
     width: 450px;
     height: 350px;
     border: none;
+}
+.boxFooter .informacion h2{
+    display: none;
 }
 .boxCopyright{
     max-width: 100%;
@@ -164,7 +168,9 @@ footer {
 .informacion__tarjeta{
     margin-top: 10px;
 }
-
+.pagination{
+    justify-content: center;
+}
 
 /*PRESUPUESTOS*/
 
@@ -304,14 +310,19 @@ fieldset div{
         align-items: center;
         text-align: center; 
     }
+    .boxFooter .informacion h2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo{
+        display: none;
+    }
     h1{
         font-size: 28px;
     }
     .subDatos{
         font-size: 21px;
-    }
-    .logo{
-        display: none;
     }
     .equivalencias__marcas{
         font-size: 22px;

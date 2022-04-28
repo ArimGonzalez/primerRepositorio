@@ -3,12 +3,12 @@
   margin: 0;
 }
 
-body {
-  background-color: white;
+/*variable color */
+body, header {
+  background-color: #ffffff;
 }
 
 header {
-  background-color: white;
   padding: 8px;
   position: -webkit-sticky;
   position: sticky;
@@ -17,7 +17,7 @@ header {
   font-family: "Roboto Condensed", sans-serif;
 }
 
-.header__logo {
+header .header__logo {
   -webkit-animation: ease-in animat 1s;
           animation: ease-in animat 1s;
 }
@@ -58,9 +58,9 @@ header {
 
 h1 {
   text-align: center;
-  font-family: "IBM Plex Mono", monospace;
   margin-top: 10px;
   color: #ca0404;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 /*FOOTER*/
@@ -194,7 +194,7 @@ footer {
   display: flex;
   font-family: "Poppins", sans-serif;
   border-style: solid;
-  width: 27%;
+  width: 22%;
   margin-top: 60px;
   margin-bottom: 30px;
   padding: 10px;
@@ -232,6 +232,7 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-height: 200px;
 }
 
 /*PRESUPUESTOS*/
@@ -501,4 +502,3 @@ fieldset div {
         grid-template-rows: repeat(6, 1fr);
   }
 }
-/*# sourceMappingURL=main.css.map */

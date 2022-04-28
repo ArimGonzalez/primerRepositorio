@@ -11,7 +11,7 @@ body {
   background-color: $white;
 }
 header {
-  background-color: $white;
+  @extend body;
   padding: 8px;
   position: sticky;
   top: 0px;
@@ -38,11 +38,16 @@ header {
     transform: scale(1);
   }
 }
+$estilosh1 : (
+  texto: center,
+  margen: 10px,
+  color: rgb(202, 4, 4),
+);
 h1 {
-  text-align: center;
+  text-align: map-get($estilosh1, texto);
+  margin-top: map-get($estilosh1, margen);
+  color: map-get($estilosh1, color);
   font-family: "IBM Plex Mono", monospace;
-  margin-top: 10px;
-  color: rgb(202, 4, 4);
 }
 
 /*FOOTER*/
@@ -87,9 +92,12 @@ footer {
   font-size: 16px;
   text-decoration: none;
 }
+@mixin sizes($width, $height) {
+  width: $width;
+  height: $height;
+}
 .boxFooter iframe {
-  width: 450px;
-  height: 350px;
+  @include sizes(450px, 350px);
   border: none;
 }
 .boxFooter .informacion h2 {
@@ -145,7 +153,7 @@ footer {
   display: flex;
   font-family: "Poppins", sans-serif;
   border-style: solid;
-  width: 27%;
+  width: 22%;
   margin-top: 60px;
   margin-bottom: 30px;
   padding: 10px;
@@ -172,6 +180,7 @@ footer {
 }
 .pagination {
   justify-content: center;
+  max-height: 200px;
 }
 
 /*PRESUPUESTOS*/

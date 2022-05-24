@@ -143,7 +143,7 @@ footer {
     display: flex;
     font-family: 'Poppins', sans-serif;
     border-style: solid;
-    width: 27%;
+    width: 22%;
     margin-top: 60px;
     margin-bottom: 30px;
     padding: 10px;
@@ -190,10 +190,13 @@ form{
     padding: 0 0 0 10px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 100%;
+    max-width: 90%;
 }
-fieldset div{
-    margin: 10px 0px;
+label{
+    margin-bottom: 14px;
+}
+button{
+    margin-top: 14px;
 }
 
 
